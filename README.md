@@ -43,7 +43,7 @@ pip install pandas scapy matplotlib
 #### How to Run: ####
 Make sure you have PCAPNG files (e.g., firefox.pcapng, google.pcapng, etc.) in the same directory as the code (src directory).
 Run the script. The analysis will generate various plots saved in the res/ directory.
-Additionally, for TLS version comparison, ensure you have CSV files that contain the protocol information.
+Additionally, for TLS version comparison, ensure you have CSV files (e.g., firefox_csv.pcapng, google_csv.pcapng, etc.) that contain the protocol information.
 
 ### 2. Application Prediction using Random Forest ###
 This section applies machine learning to predict the application generating network traffic based on packet features. The model uses traffic data, including flow ID, packet size, and timestamp, to predict the correct application.
