@@ -41,7 +41,7 @@ pip install pandas scapy matplotlib
 
 
 #### How to Run: ####
-Make sure you have PCAPNG files (e.g., firefox.pcapng, google.pcapng, etc.) in the same directory (src directory).
+Make sure you have PCAPNG files (e.g., firefox.pcapng, google.pcapng, etc.) in the same directory as the code (src directory).
 Run the script. The analysis will generate various plots saved in the res/ directory.
 Additionally, for TLS version comparison, ensure you have CSV files that contain the protocol information.
 ### 2. Application Prediction using Random Forest ###
@@ -87,9 +87,11 @@ The accuracy of both models is compared, and a bar chart is generated showing th
 pip install pyshark pandas numpy matplotlib scikit-learn
 ```
 #### How to Run: ####
-Place your PCAPNG files (e.g., firefox.pcapng, google.pcapng, etc.) in the src directory.
+Place your PCAPNG files (e.g., firefox.pcapng, google.pcapng, etc.) in the src directory (in the same directory as the code), then run it.
 The script will automatically process the files and save the merged dataset as merged_data.csv in the output directory.
 The model will be trained and evaluated, and the results will be displayed in a bar chart.
+
+
 #### Output: ####
 **Network Traffic Analysis:** The script will output several PNG files with the following plots:
 Average Packet Size,
@@ -97,13 +99,13 @@ Average TTL,
 Protocol Distribution,
 Top Ports and their Usage Percentages,
 TCP Window Size Comparison,
-TLS Version Comparison (from CSV).
+TLS Version Comparison.
 
 **Machine Learning Prediction:** A bar chart showing the comparison between actual and predicted application usage under the two conditions (with and without FlowID).
 
 ### 3. Bonus: Application Prediction Using Random Forest
 
-This section demonstrates how machine learning (Random Forest) is applied to predict the application generating network traffic that works together, based on packet features.
+This section demonstrates how machine learning (Random Forest) is applied to predict the application generating network traffic that works together, based on packet features. The code makes a graph that represent the resultes.
 
 #### Code Explanation:
 - **Imports**: Necessary libraries for data manipulation (`pandas`, `numpy`), plotting (`matplotlib`), PCAPNG processing (`pyshark`), machine learning (`scikit-learn`), and others for handling IP addresses and directories.
@@ -125,6 +127,6 @@ This section demonstrates how machine learning (Random Forest) is applied to pre
    ```bash
    pip install pyshark pandas numpy matplotlib scikit-learn imbalanced-learn
    
-2. Make sure the capture spotify_with_gmail.pcapng ia in the src directory.
+2. Make sure the capture spotify_with_gmail.pcapng ia in the src directory (in the same directory as the code).
 ## Conclusion: ##
 This project provides both an analytical and a machine learning approach to understanding and predicting network traffic characteristics and behaviors. The first part is aimed at visualizing network traffic metrics, while the second part uses Random Forest to predict the application generating the traffic based on packet features.
