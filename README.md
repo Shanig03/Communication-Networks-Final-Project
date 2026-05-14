@@ -1,6 +1,6 @@
 This project was developed as part of a university course assignment on Network Communications.
 
-# README: Network Communications Final Project #
+# Network Communications Final Project #
 This project comprises two independent tasks related to network traffic analysis and machine learning. Each task is described separately below.
 
 ### 1. Network Traffic Analysis and Visualization ###
